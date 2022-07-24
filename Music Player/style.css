@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #fff, #000);
+}
+
+.musicplayer {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    background: #fff;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 14px rgba(0, 0, 0, .5);
+}
+
+.imgs {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin-top: 15%;
+    margin-bottom: 10%;
+}
+
+.imgs img {
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.meter {
+    width: 84%;
+    height: 12px;
+    background: rgb(92, 92, 92);
+    /* margin-top: 15%; */
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.meter #widthChange {
+    /* width: 0%; */
+    left: 2px;
+    position: absolute;
+    height: 8px;
+    border-radius: 10px;
+    background: rgb(255, 0, 0);
+    z-index: 2;
+}
+
+.anime {
+    animation: anime1 2s linear infinite;
+}
+
+@keyframes anime1 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.buttons {
+    margin-top: 15px;
+    width: 80%;
+    position: relative;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.buttons button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    outline: none;
+    border: none;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.buttons button:first-child {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.buttons button:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.name {
+    width: 80%;
+    margin-bottom: 17px;
+    height: 20px;
+}
+
+.duration {
+    width: 80%;
+    display: flex;
+    height: 3px;
+    justify-content: space-between;
+    font-size: 12px;
+}
